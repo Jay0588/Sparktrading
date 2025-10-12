@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrical Cables - Spark Trading Company Ltd.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --color-bg: #00264d;
+      --color-bg-darker: #001f3a;
+      --color-accent: #ffcc00;
+      --color-text: #ffffff;
+      --container-max: 1200px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+    .container { max-width: var(--container-max); margin: 0 auto; padding: 20px; }
+    .back-btn {
+      background: var(--color-accent);
+      color: var(--color-bg);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .product-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .product-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .product-info h1 {
+      color: var(--color-accent);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .price {
+      font-size: 2em;
+      color: var(--color-accent);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .spec-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .spec-card h3 {
+      color: var(--color-accent);
+      margin-bottom: 15px;
+    }
+    .spec-list {
+      list-style: none;
+    }
+    .spec-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .spec-list li:last-child {
+      border-bottom: none;
+    }
+    @media (max-width: 768px) {
+      .product-header {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Add this to the existing <style> section */
+footer.site-footer {
+  background-color: var(--color-bg-darker);
+  margin-top: 48px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.footer-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 28px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.footer-col h4 {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+.footer-col p, .footer-col a, .footer-col li {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-decoration: none;
+  list-style: none;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.8);
+}
+.social a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+.social a:hover {
+  color: var(--color-accent);
+}
+@media (min-width: 768px) {
+  .footer-inner { grid-template-columns: 1.2fr 1fr 1fr; }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-btn">
+      <i class="fas fa-arrow-left"></i> Back to Products
+    </a>
+    
+    <div class="product-header">
+      <div>
+        <img src="cable.jpg" alt="Electrical Cables" class="product-image">
+      </div>
+      <div class="product-info">
+        <h1>Electrical Cables</h1>
+        <p>High-quality electrical cables for power transmission and distribution. Our comprehensive range includes PVC insulated cables, armored cables, and flexible cords suitable for various applications.</p>
+        
+        <h3 style="color: var(--color-accent); margin-top: 30px;">Key Features:</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+          <li>✓ High conductivity copper conductors</li>
+          <li>✓ Flame retardant insulation</li>
+          <li>✓ Weather resistant outer sheath</li>
+          <li>✓ Compliant with IEC standards</li>
+          <li>✓ Available in various sizes</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Other Products Section -->
+    <section class="other-products" style="margin-top: 60px; padding-top: 40px; border-top: 2px solid rgba(255,255,255,0.1);">
+      <div class="container">
+        <h2 style="color: var(--color-accent); text-align: center; margin-bottom: 30px; font-size: 2em;">Our Other Products</h2>
+        <div class="other-products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+          
+          <a href="circuit-breakers.html" class="other-product-card" style="text-decoration: none; color: inherit;">
+            <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+              <img src="board.png" alt="Circuit Breakers" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+              <h3 style="color: var(--color-accent); margin-bottom: 10px;">Circuit Breakers</h3>
+              <p style="font-size: 0.9em; margin-bottom: 10px;">Reliable electrical protection for all applications.</p>
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.9em;">View Details →</span>
+            </div>
+          </a>
+          
+          <a href="led-lighting.html" class="other-product-card" style="text-decoration: none; color: inherit;">
+            <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+              <img src="lighting.png" alt="LED Lighting" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+              <h3 style="color: var(--color-accent); margin-bottom: 10px;">LED Lighting</h3>
+              <p style="font-size: 0.9em; margin-bottom: 10px;">Energy-efficient indoor and outdoor lighting solutions.</p>
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.9em;">View Details →</span>
+            </div>
+          </a>
+          
+          <a href="distribution-boards.html" class="other-product-card" style="text-decoration: none; color: inherit;">
+            <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+              <img src="distrubution-board.jpg" alt="Distribution Board" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+              <h3 style="color: var(--color-accent); margin-bottom: 10px;">Distribution Boards</h3>
+              <p style="font-size: 0.9em; margin-bottom: 10px;">Pre-assembled, safe, and easy to install.</p>
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.9em;">View Details →</span>
+            </div>
+          </a>
+          
+          <a href="switches-sockets.html" class="other-product-card" style="text-decoration: none; color: inherit;">
+            <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+              <img src="switch.jpg" alt="Switches & Sockets" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+              <h3 style="color: var(--color-accent); margin-bottom: 10px;">Switches & Sockets</h3>
+              <p style="font-size: 0.9em; margin-bottom: 10px;">Modern designs for home and office interiors.</p>
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.9em;">View Details →</span>
+            </div>
+          </a>
+          
+          <a href="control-panels.html" class="other-product-card" style="text-decoration: none; color: inherit;">
+            <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+              <img src="control-panel.jpg" alt="Control Panels" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+              <h3 style="color: var(--color-accent); margin-bottom: 10px;">Control Panels</h3>
+              <p style="font-size: 0.9em; margin-bottom: 10px;">Robust components for automation and control.</p>
+              <span style="color: var(--color-accent); font-weight: bold; font-size: 0.9em;">View Details →</span>
+            </div>
+          </a>
+          
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="index.html#products" style="background: var(--color-accent); color: var(--color-bg); padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">View All Products</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <p style="font-style: italic;">"At Spark, we don't just supply electrical products -- we deliver the power behind your projects."</p>
+        <div style="margin-top:10px;">
+          <img src="https://i.ibb.co/WWLkNfZN/Chat-GPT-Image-Aug-18-2025-07-30-59-PM-removebg-preview.png" alt="Spark Logo" style="height:48px; width:auto; border-radius:6px;">
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><strong>Email:</strong> sparktrading@live.com</p>
+        <p><strong>Phone:</strong> 0722562222</p>
+        <div class="social" style="margin-top: 8px;">
+          <a href="https://www.instagram.com/sparktradingsocials" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1Ab1yLy5Yh" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Spark Trading Company Ltd. All rights reserved.</div>
+  </footer>
+</body>
+</html>
